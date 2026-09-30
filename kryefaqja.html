@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">📚 Sistemini i Bibliotekës</h1>
+            <h1 class="logo">📚 Biblioteka Menaxhimi</h1>
             <ul class="nav-links">
                 <li><a href="kryefaqja.html" class="active">Kryefaqja</a></li>
                 <li><a href="librat.html">Librat</a></li>
@@ -21,45 +21,71 @@
 
     <div class="container">
         <section class="hero">
-            <h2>Mirë se vini në Sistemin e Menaxhimit të Bibliotekës</h2>
-            <p>Menaxhoni librat, anëtarët dhe raportet me lehtësi</p>
+            <div class="hero-text">
+                <p class="small-label">Sistemi i Bibliotekës</p>
+                <h2>Menaxho librat dhe anëtarët në mënyrë profesionale</h2>
+                <p>Qëndroni të organizuar me një sistem të lehtë për t'u përdorur, në gjuhën shqipe.</p>
+            </div>
+            <div class="hero-box">
+                <div class="mini-stat">
+                    <span>📖</span>
+                    <div>
+                        <strong id="totalLibrat">0</strong>
+                        <small>Libra total</small>
+                    </div>
+                </div>
+                <div class="mini-stat">
+                    <span>👥</span>
+                    <div>
+                        <strong id="totalAnetaret">0</strong>
+                        <small>Anëtarë</small>
+                    </div>
+                </div>
+                <div class="mini-stat">
+                    <span>📤</span>
+                    <div>
+                        <strong id="libratDhene">0</strong>
+                        <small>Dhënë</small>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="dashboard">
             <div class="card">
-                <h3>📖 Librat në Sistem</h3>
-                <p class="big-number" id="totalLibrat">0</p>
-                <p>Libra në total</p>
+                <h3>📊 Librat në total</h3>
+                <p class="big-number" id="totalLibratCard">0</p>
+                <p>Libra të regjistruar</p>
             </div>
             <div class="card">
-                <h3>📤 Libra të Dhënë</h3>
-                <p class="big-number" id="libratDhene">0</p>
-                <p>Momentalisht jashtë</p>
+                <h3>📤 Libra të dhënë</h3>
+                <p class="big-number" id="libratDheneCard">0</p>
+                <p>Gjendje aktuale</p>
             </div>
             <div class="card">
-                <h3>📥 Libra në Raft</h3>
-                <p class="big-number" id="libratNe">0</p>
+                <h3>📥 Libra në raft</h3>
+                <p class="big-number" id="libratNeCard">0</p>
                 <p>Në bibliotekë</p>
             </div>
             <div class="card">
                 <h3>👥 Anëtarët</h3>
-                <p class="big-number" id="totalAnetaret">0</p>
+                <p class="big-number" id="totalAnetaretCard">0</p>
                 <p>Anëtarë të regjistruar</p>
             </div>
         </section>
 
         <section class="quick-links">
-            <h3>Përdorim i Shpejtë</h3>
+            <h3>Menu e shpejtë</h3>
             <div class="button-group">
-                <a href="librat.html" class="btn btn-primary">➕ Shto Libra</a>
-                <a href="anetaret.html" class="btn btn-secondary">➕ Shto Anëtar</a>
-                <a href="raportet.html" class="btn btn-tertiary">📊 Shiko Raportet</a>
+                <a href="librat.html" class="btn btn-primary">➕ Shto libra</a>
+                <a href="anetaret.html" class="btn btn-secondary">➕ Shto anëtar</a>
+                <a href="raportet.html" class="btn btn-tertiary">📊 Shiko raportet</a>
             </div>
         </section>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Sistemini i Bibliotekës. Të gjitha të drejtat e rezervuara.</p>
+        <p>&copy; 2026 Biblioteka Menaxhimi. Të gjitha të drejtat e rezervuara.</p>
     </footer>
 
     <script src="skripti.js"></script>
