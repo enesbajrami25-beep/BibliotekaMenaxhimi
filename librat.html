@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librat - Biblioteka Menaxhimi</title>
+    <link rel="stylesheet" href="stilin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">📚 Biblioteka Menaxhimi</h1>
+            <ul class="nav-links">
+                <li><a href="kryefaqja.html">Kryefaqja</a></li>
+                <li><a href="librat.html" class="active">Librat</a></li>
+                <li><a href="anetaret.html">Anëtarët</a></li>
+                <li><a href="raportet.html">Raportet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Katalogu i librave</h2>
+
+        <section class="form-section panel">
+            <h3>➕ Shto libër të ri</h3>
+            <form id="formaLibri">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="emriLibrit">Emri i librit</label>
+                        <input type="text" id="emriLibrit" placeholder="Shembull: Matematika bazë" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="autori">Autori</label>
+                        <input type="text" id="autori" placeholder="Shembull: Xhavit Hoxha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kategoria">Kategoria</label>
+                        <select id="kategoria" required>
+                            <option value="">Zgjidh kategorinë</option>
+                            <option value="Matematika">Matematika</option>
+                            <option value="Fizika">Fizika</option>
+                            <option value="Teknologji">Teknologji</option>
+                            <option value="Informatikë">Informatikë</option>
+                            <option value="Kimia">Kimia</option>
+                            <option value="Biologji">Biologji</option>
+                            <option value="Gjeografi">Gjeografi</option>
+                            <option value="Histori">Histori</option>
+                            <option value="Letërsia">Letërsia</option>
+                            <option value="Gjuhë">Gjuhë</option>
+                            <option value="Tjera">Tjera</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sasia">Sasia</label>
+                        <input type="number" id="sasia" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN</label>
+                        <input type="text" id="isbn" placeholder="Shembull: 978-99999-1-234-5">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">✅ Regjistro libër</button>
+            </form>
+        </section>
+
+        <section class="books-section panel">
+            <div class="section-head">
+                <h3>📚 Librat e disponueshëm</h3>
+                <span id="numriLibrit" class="badge">0 libra</span>
+            </div>
+            <div id="listaLibrave" class="books-grid"></div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Biblioteka Menaxhimi. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+    <script src="skripti.js"></script>
+</body>
+</html>
