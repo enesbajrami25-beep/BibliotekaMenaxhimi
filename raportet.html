@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raportet - Biblioteka Menaxhimi</title>
+    <link rel="stylesheet" href="stilin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">📚 Biblioteka Menaxhimi</h1>
+            <ul class="nav-links">
+                <li><a href="kryefaqja.html">Kryefaqja</a></li>
+                <li><a href="librat.html">Librat</a></li>
+                <li><a href="anetaret.html">Anëtarët</a></li>
+                <li><a href="raportet.html" class="active">Raportet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Raportet dhe statistikat</h2>
+
+        <section class="stats-section panel">
+            <h3>📊 Statistika e përgjithshme</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>Libra në total</h4>
+                    <p class="stat-number" id="statTotalLibrat">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Libra të dhënë</h4>
+                    <p class="stat-number" id="statLibratDhene">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Libra në raft</h4>
+                    <p class="stat-number" id="statLibratNe">0</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Anëtarë aktivë</h4>
+                    <p class="stat-number" id="statAnetaret">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reports-section panel">
+            <h3>📋 Raporte</h3>
+            <div class="report-card">
+                <h4>Libra sipas kategorisë</h4>
+                <div id="raportKategoria" class="report-content"></div>
+            </div>
+
+            <div class="report-card">
+                <h4>Libra të dhënë nga anëtarët</h4>
+                <div id="raportAnetaret" class="report-content"></div>
+            </div>
+
+            <div class="report-card">
+                <h4>Libra më të kërkuar</h4>
+                <div id="raportPopularizuara" class="report-content"></div>
+            </div>
+        </section>
+
+        <section class="actions-section panel">
+            <h3>⚙️ Veprime</h3>
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="printoRaportin()">🖨️ Printo raportin</button>
+                <button class="btn btn-secondary" onclick="eksportCSV()">💾 Eksporto CSV</button>
+                <button class="btn btn-tertiary" onclick="pastroDatat()">🗑️ Pastro të gjitha të dhënat</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Biblioteka Menaxhimi. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+    <script src="skripti.js"></script>
+</body>
+</html>
