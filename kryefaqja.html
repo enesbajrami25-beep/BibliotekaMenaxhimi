@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka Menaxhimi - Kryefaqja</title>
+    <link rel="stylesheet" href="stilin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">📚 Sistemini i Bibliotekës</h1>
+            <ul class="nav-links">
+                <li><a href="kryefaqja.html" class="active">Kryefaqja</a></li>
+                <li><a href="librat.html">Librat</a></li>
+                <li><a href="anetaret.html">Anëtarët</a></li>
+                <li><a href="raportet.html">Raportet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Mirë se vini në Sistemin e Menaxhimit të Bibliotekës</h2>
+            <p>Menaxhoni librat, anëtarët dhe raportet me lehtësi</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>📖 Librat në Sistem</h3>
+                <p class="big-number" id="totalLibrat">0</p>
+                <p>Libra në total</p>
+            </div>
+            <div class="card">
+                <h3>📤 Libra të Dhënë</h3>
+                <p class="big-number" id="libratDhene">0</p>
+                <p>Momentalisht jashtë</p>
+            </div>
+            <div class="card">
+                <h3>📥 Libra në Raft</h3>
+                <p class="big-number" id="libratNe">0</p>
+                <p>Në bibliotekë</p>
+            </div>
+            <div class="card">
+                <h3>👥 Anëtarët</h3>
+                <p class="big-number" id="totalAnetaret">0</p>
+                <p>Anëtarë të regjistruar</p>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <h3>Përdorim i Shpejtë</h3>
+            <div class="button-group">
+                <a href="librat.html" class="btn btn-primary">➕ Shto Libra</a>
+                <a href="anetaret.html" class="btn btn-secondary">➕ Shto Anëtar</a>
+                <a href="raportet.html" class="btn btn-tertiary">📊 Shiko Raportet</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sistemini i Bibliotekës. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+    <script src="skripti.js"></script>
+</body>
+</html>
